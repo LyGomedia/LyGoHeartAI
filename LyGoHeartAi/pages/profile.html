@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>LyGoHeart AI Profile</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<style>
+
+.profile-card{
+
+background:white;
+padding:25px;
+border-radius:25px;
+margin-top:25px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+.avatar{
+
+width:110px;
+height:110px;
+
+background:#064126;
+
+color:white;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:45px;
+
+margin:auto;
+
+}
+
+
+.info{
+
+background:#f0f7f3;
+
+padding:15px;
+
+border-radius:18px;
+
+margin:12px 0;
+
+text-align:left;
+
+}
+
+
+.info i{
+
+color:#064126;
+
+margin-right:10px;
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<div class="container">
+
+
+
+<div class="avatar">
+
+<i class="fa-solid fa-user"></i>
+
+</div>
+
+
+
+
+<h1>My Profile</h1>
+
+
+<p>
+Your emotional growth journey ❤️
+</p>
+
+
+
+
+<div class="profile-card">
+
+
+<h2>
+
+<i class="fa-solid fa-user-circle"></i>
+
+User Profile
+
+</h2>
+
+
+
+
+<div class="info">
+
+<i class="fa-solid fa-user"></i>
+
+Name: LyGoHeart User
+
+</div>
+
+
+
+<div class="info">
+
+<i class="fa-solid fa-heart"></i>
+
+Relationship Support Active
+
+</div>
+
+
+
+
+<div class="info">
+
+<i class="fa-solid fa-face-smile"></i>
+
+Mood Tracking Enabled
+
+</div>
+
+
+
+
+<div class="info">
+
+<i class="fa-solid fa-star"></i>
+
+Saved Motivation
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="profile-card">
+
+
+<h2>
+
+<i class="fa-solid fa-chart-line"></i>
+
+Growth Journey
+
+</h2>
+
+
+<div class="info">
+
+❤️ Better Communication
+
+</div>
+
+
+<div class="info">
+
+🌱 Emotional Awareness
+
+</div>
+
+
+<div class="info">
+
+🤝 Healthy Love Building
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<button onclick="showSaved()">
+
+<i class="fa-solid fa-bookmark"></i>
+
+My Saved Motivation
+
+</button>
+
+
+
+
+
+<div class="profile-card" id="saved">
+
+No saved motivation yet ⭐
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<!-- Bottom Navigation -->
+
+
+<div class="bottom-nav">
+
+
+<a href="../index.html">
+
+<i class="fa-solid fa-house"></i>
+
+Home
+
+</a>
+
+
+
+<a href="ai-chat.html">
+
+<i class="fa-solid fa-brain"></i>
+
+AI
+
+</a>
+
+
+
+<a href="mood-tracker.html">
+
+<i class="fa-solid fa-heart-pulse"></i>
+
+Mood
+
+</a>
+
+
+
+<a href="profile.html">
+
+<i class="fa-solid fa-user"></i>
+
+Profile
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<script>
+
+
+function showSaved(){
+
+
+let saved = localStorage.getItem(
+"favoriteMotivation"
+);
+
+
+
+if(saved){
+
+
+document.getElementById("saved").innerHTML=
+
+"⭐ Saved Motivation:<br><br>"+saved;
+
+
+}
+
+else{
+
+
+document.getElementById("saved").innerHTML=
+
+"No saved motivation yet ⭐";
+
+
+}
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

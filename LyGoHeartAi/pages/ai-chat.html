@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>LyGoHeart AI Chat</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<style>
+
+.chat-box{
+
+    background:white;
+    height:350px;
+    overflow-y:auto;
+    padding:15px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    margin:20px 0;
+
+}
+
+
+.message{
+
+    padding:12px;
+    margin:10px 0;
+    border-radius:18px;
+    max-width:80%;
+
+}
+
+
+.ai{
+
+    background:#e8f3ed;
+    text-align:left;
+
+}
+
+
+.user{
+
+    background:#064126;
+    color:white;
+    margin-left:auto;
+    text-align:right;
+
+}
+
+
+.chat-input{
+
+    display:flex;
+    gap:10px;
+
+}
+
+
+input{
+
+    flex:1;
+    padding:15px;
+    border-radius:20px;
+    border:1px solid #ccc;
+    outline:none;
+
+}
+
+
+.chat-input button{
+
+    width:60px;
+    padding:10px;
+
+}
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+<div class="container">
+
+
+
+<div class="logo">
+
+<i class="fa-solid fa-brain"></i>
+
+</div>
+
+
+
+<h1>LyGoHeart AI</h1>
+
+
+<p>
+Relationship Support Coach ❤️
+</p>
+
+
+
+
+<div class="chat-box" id="chatBox">
+
+
+<div class="message ai">
+
+Hello 👋  
+Mimi ni LyGoHeart AI.  
+Niambie changamoto yako ya mahusiano.
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="chat-input">
+
+
+<input 
+id="messageInput"
+placeholder="Andika ujumbe wako..."
+>
+
+
+
+<button onclick="sendMessage()">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<!-- Bottom Navigation -->
+
+<div class="bottom-nav">
+
+
+<a href="../index.html">
+
+<i class="fa-solid fa-house"></i>
+
+Home
+
+</a>
+
+
+
+
+<a href="ai-chat.html">
+
+<i class="fa-solid fa-brain"></i>
+
+AI
+
+</a>
+
+
+
+
+<a href="mood-tracker.html">
+
+<i class="fa-solid fa-heart-pulse"></i>
+
+Mood
+
+</a>
+
+
+
+
+<a href="profile.html">
+
+<i class="fa-solid fa-user"></i>
+
+Profile
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+<script>
+
+
+function sendMessage(){
+
+
+let input = document.getElementById("messageInput");
+
+let chat = document.getElementById("chatBox");
+
+
+let text = input.value;
+
+
+
+if(text==""){
+
+return;
+
+}
+
+
+
+
+// User message
+
+chat.innerHTML +=
+
+`
+<div class="message user">
+
+${text}
+
+</div>
+`;
+
+
+
+
+
+// AI response
+
+setTimeout(()=>{
+
+
+chat.innerHTML +=
+
+`
+<div class="message ai">
+
+Nakuelewa ❤️. 
+Jaribu kuzungumza na mwenza wako kwa utulivu, 
+sikiliza hisia zake na epuka maamuzi ukiwa na hasira.
+
+</div>
+`;
+
+
+
+chat.scrollTop = chat.scrollHeight;
+
+
+
+},700);
+
+
+
+
+input.value="";
+
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
