@@ -1,0 +1,254 @@
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+    margin:0;
+    padding-bottom:80px;
+    font-family:Arial, sans-serif;
+    background:#f0f7f3;
+    color:#222;
+}
+
+
+/* Main Container */
+
+.container{
+
+    width:90%;
+    max-width:420px;
+    margin:auto;
+    padding:40px 0;
+    text-align:center;
+
+}
+
+
+/* Logo */
+
+.logo{
+
+    width:100px;
+    height:100px;
+
+    margin:auto;
+
+    background:#064126;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:45px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+}
+
+
+
+/* Title */
+
+h1{
+
+    color:#064126;
+
+    font-size:32px;
+
+    margin-bottom:5px;
+
+}
+
+
+
+p{
+
+    color:#666;
+
+    line-height:1.5;
+
+}
+
+
+
+/* Motivation Card */
+
+.motivation-card{
+
+    background:white;
+
+    padding:20px;
+
+    margin:30px 0;
+
+    border-radius:25px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+
+.motivation-card h2{
+
+    color:#064126;
+
+    font-size:20px;
+
+}
+
+
+
+.motivation-card i{
+
+    color:#f5b800;
+
+}
+
+
+
+/* Menu */
+
+.menu a{
+
+    text-decoration:none;
+
+}
+
+
+
+/* Buttons */
+
+button{
+
+    width:100%;
+
+    padding:18px;
+
+    margin:10px 0;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:#064126;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+}
+
+
+
+button i{
+
+    font-size:22px;
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.03);
+
+    transition:0.3s;
+
+}
+
+
+
+/* Bottom Navigation */
+
+.bottom-nav{
+
+    position:fixed;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    padding:12px 0;
+
+    box-shadow:0 -5px 15px rgba(0,0,0,0.1);
+
+    z-index:1000;
+
+}
+
+
+
+.bottom-nav a{
+
+    text-decoration:none;
+
+    color:#064126;
+
+    font-size:12px;
+
+    text-align:center;
+
+}
+
+
+
+.bottom-nav i{
+
+    display:block;
+
+    font-size:22px;
+
+    margin-bottom:5px;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    h1{
+
+        font-size:26px;
+
+    }
+
+
+    .container{
+
+        padding-top:25px;
+
+    }
+
+}
